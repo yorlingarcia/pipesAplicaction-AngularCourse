@@ -18,8 +18,9 @@
 <p-button label="Click">opcion2</p-button> -->
 
 <!-- <p-card header="header"> Content </p-card> -->
+
 <p-card
-  header="Advanced Card"
+  [header]="nombre | titlecase"
   subheader="Card Subheader"
   [style]="{ width: '360px' }"
   styleClass="p-card-shadow"
@@ -46,3 +47,5 @@
     ></p-button>
   </ng-template>
 </p-card>
+
+<app-menu></app-menu>
