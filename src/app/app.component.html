@@ -1,4 +1,18 @@
-<h1>Hola Mundo</h1>
-<h2>{{ "HoLa MuNdo" | titlecase }}</h2>
-<h3>{{ nombre | titlecase }}</h3>
-<button (click)="mostrarNombre()">Cambiar nombre</button>
+<div class="text-layout">
+  <h1>Hola Mundo</h1>
+  <h2>{{ "HoLa MuNdo" | titlecase }}</h2>
+  <h3>{{ nombre | titlecase }}</h3>
+</div>
+
+<button
+  pButton
+  (click)="mostrarNombre()"
+  label="Cambiar nombre"
+  icon="pi pi-thumbs-up"
+  iconPos="right"
+  class="p-button-help"
+></button>
+<!-- <button pButton type="button" icon="pi pi-thumbs-up" iconPos="left"></button>
+<button pButton type="button" label="Help" class="p-button-help"></button> -->
+<!-- <button pButton type="button" label="Click">opcion 1</button>
+<p-button label="Click">opcion2</p-button> -->
