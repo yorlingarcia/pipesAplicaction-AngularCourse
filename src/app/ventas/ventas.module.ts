@@ -5,17 +5,19 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
-
-
 @NgModule({
   declarations: [
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [
+    NumerosComponent,
+    NoComunesComponent,
+    BasicosComponent,
+    OrdenarComponent,
+  ],
 })
-export class VentasModule { }
+export class VentasModule {}
