@@ -45,6 +45,14 @@
     </p-fieldset>
   </div>
   <div class="col md:col-6">
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
+      <ul>
+        <!-- <li *ngFor="let item of persona | keyvalue">{{ item | json }}</li> -->
+        <li *ngFor="let item of persona | keyvalue">{{ item | json }}</li>
+      </ul>
+    </p-fieldset>
+  </div>
+  <div class="col md:col-6">
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
       <ul>
         <!-- <li *ngFor="let item of persona | keyvalue">{{ item | json }}</li> -->
@@ -52,6 +60,13 @@
           <b>{{ item.key }}:</b> {{ item.value }}
         </li>
       </ul>
+    </p-fieldset>
+  </div>
+  <div class="col md:col-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <!-- <p>{{ miObservable | async }}</p> -->
+      <pre *ngIf="!(valorPromesa | async)">Resolviendo promesa</pre>
+      <pre>{{ valorPromesa | async }}</pre>
     </p-fieldset>
   </div>
 </div>
