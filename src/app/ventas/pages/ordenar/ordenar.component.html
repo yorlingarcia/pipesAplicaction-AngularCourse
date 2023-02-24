@@ -1,5 +1,10 @@
 <div class="text-layout">
   <h1>Pipes personalizados</h1>
-  <p>Pipes creados por {{ "nosotros" | mayusculas : true }}</p>
-  <button>toogle mayusculas</button>
+  <p>Pipes creados por {{ "nosotros" | mayusculas : value }}</p>
+  <button
+    pButton
+    type="button"
+    label="Toogle Mayusculas"
+    (click)="cambiar()"
+  ></button>
 </div>
