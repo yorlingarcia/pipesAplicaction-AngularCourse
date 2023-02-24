@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class OrdenarComponent {
-  value: boolean = false;
+  value: boolean = true;
 
   cambiar() {
-    this.value ? (this.value = false) : (this.value = true);
-    console.log(this.value);
+    this.value = !this.value;
   }
 }
