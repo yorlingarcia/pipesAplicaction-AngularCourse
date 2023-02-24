@@ -35,4 +35,10 @@ export class NoComunesComponent {
   borrarCliente() {
     this.clientes.shift();
   }
+
+  persona = {
+    nombre: 'Yorlin',
+    direccion: 'Pamplona',
+    edad: '26',
+  };
 }
