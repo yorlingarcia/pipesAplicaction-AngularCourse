@@ -8,6 +8,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 })
 export class OrdenarComponent {
   value: boolean = true;
+  ordenarPor: string = '';
   heroes: Heroe[] = [
     {
       nombre: 'Superman',
@@ -38,5 +39,9 @@ export class OrdenarComponent {
 
   cambiar() {
     this.value = !this.value;
+  }
+
+  cambiarOrden(termino: string) {
+    this.ordenarPor = termino;
   }
 }
